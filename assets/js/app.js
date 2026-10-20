@@ -84,7 +84,7 @@ function readPost(arr) {
                                 <p>${post.content}</p>
                                 
                             </div>
-                            <div class="card-footer d-flex justify-content-between bg-success">
+                            <div class="card-footer d-flex justify-content-between">
                                 <button onclick= "onPostEdit(this)" class="btn btn-dark btn-sm">Edit</button>
                                 <button onclick="onPostRemove(this)" class="btn btn-danger btn-sm">Remove</button>
 
@@ -145,7 +145,7 @@ function onPostAdd(eve) {
 
             col.innerHTML = `
                     <div class="card h-100">
-                        <div class="card-header bg-success">
+                        <div class="card-header bg-success text-white">
                             <h3>
                                 ${newPost.title}
                             </h3>
@@ -213,7 +213,7 @@ function onPostUpdate() {
             col.className = `col-md-4  mb-4`
             col.innerHTML = `
                 <div class="card h-100">
-                        <div class="card-header bg-success">
+                        <div class="card-header bg-success text-white">
                             <h3>
                                 ${updatedObj.title}
                             </h3>
